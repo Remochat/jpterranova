@@ -1,0 +1,553 @@
+/* RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* RESET SIMPLIFIE */
+/* 
+html, body {
+  margin:0;
+  pading:0;
+  font-family: 'Cormorant';
+  font-size:16px;
+*/
+
+@font-face {
+    font-family: "Cormorant";
+    src: url(font/Cormorant_Garamond/CormorantGaramond-Bold.ttf) format('truetype'),
+         url(font/Cormorant_Garamond/CormorantGaramond-BoldItalic.ttf) format('truetype'),
+         url(font/Cormorant_Garamond/CormorantGaramond-Italic.ttf) format('truetype'),
+         url(font/Cormorant_Garamond/CormorantGaramond-Light.ttf) format('truetype'),
+         url(font/Cormorant_Garamond/CormorantGaramond-LightItalic.ttf) format('truetype'),
+         url(font/Cormorant_Garamond/CormorantGaramond-Medium.ttf) format('truetype'),
+         url(font/Cormorant_Garamond/CormorantGaramond-MediumItalic.ttf) format('truetype'),
+         url(font/Cormorant_Garamond/CormorantGaramond-Regular.ttf) format('truetype'),
+         url(font/Cormorant_Garamond/CormorantGaramond-SemiBold.ttf) format('truetype'),
+         url(font/Cormorant_Garamond/CormorantGaramond-SemiBoldItalic.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Fauna One";
+    src: url(font/Fauna_One/FaunaOne-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Playfair";
+    src: url(font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf) format('truetype'),
+         url(font/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf)format('truetype');
+}
+@font-face {
+    font-family: "Yeseva One";
+    src: url(font/Yeseva_One/YesevaOne-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Graphit";
+    src: url(font/Graphit/Graphit-Regular.otf) format('opentype'),
+       url(font/Graphit/Graphit-Regular.woff) format('woff');
+}
+@font-face {
+    font-family: "Mathilde";
+    src: url(font/Mathilde.otf/mathilde.otf) format('opentype');
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  min-width: 200px;
+}
+
+/*
+a:hover {
+  background-color: gold;
+}
+*/
+
+  /* NAVIGATION */
+
+.nav-list {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+  height: 5rem;
+}
+
+.nav-item {
+  margin-right: 6rem;
+  text-transform: lowercase;
+  font-weight:600;
+  
+}
+
+.nav-item a {
+  color: #333;
+  letter-spacing: 1.2px;
+  font-family: "Fauna One";
+}
+
+.nav-item:first-child {
+  margin-right: auto;
+  margin-left: 6rem;
+}
+
+.nav-item:last-child {
+  margin-right: 10rem;
+  margin-left: 0;
+}
+
+
+  /* MAIN */
+
+#banner1 {
+  position: relative;
+  background: url("img/pic/retouche_edward-howell-R8HoXig87p8-unsplash2.jpg")center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  line-height: 1.4em;
+  text-align:center;
+}
+
+#banner1:before {       /* Overlay */
+  position: absolute;
+  content: "";
+  top: 0;
+  left:0;
+  width:100%;
+  height: 100%;
+  background-color: rgba(20,20,20, 0.20);
+}
+
+
+#banner1 * {
+  position: relative;       /* Makes elements display above overlay. */
+
+}
+
+main h1 {
+  color: #fff;
+  font-family: 'Yeseva One', sans-serif;
+  font-size: 4em;
+  letter-spacing: 0.03em;                      
+  text-transform: uppercase;
+  top: 30%;
+}
+
+main h2 {
+  color: #fff;
+  font-family: 'Fauna One', sans-serif;
+  font-size: 32px;
+  text-align: center;
+  top: 30%;
+ }
+
+
+  .draw-item {
+    background-size: cover;
+    margin: 1em auto;
+    align-content: center;
+  }
+
+  .draw-item img {
+    background-size: cover;
+    height: 6em;
+  }
+ 
+
+.edito {
+  margin: 2em auto;
+  font-size: 1.3em;
+  text-align: center;
+  width: 36%;
+  color:#333;
+  line-height: 1.6em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+
+}
+
+.base {
+  background-color: #fff;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  text-align: center;
+  width: 100%;
+}
+
+.titremodule2 {
+  font-family: "Yeseva One";
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color:#f2b33d;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+/*
+.retouche1 {
+  color: red;
+}
+
+.retouche2 {
+  color: red;
+}
+
+.bold {
+  font-weight: 500;
+}
+*/
+
+/* MODULE #3 */
+
+.supporting {              /*fond img utilisé sur modules */
+  position: relative;
+  background: url("img/pic/brooke-lark-kXQ3J7_2fpc-unsplash_light.jpg")center center no-repeat; padding-top: 80px;
+  padding-top: 80px;
+  padding-bottom: 6em;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+}
+
+.supporting:before {            /* Overlay */
+  position: absolute;
+  content:"";
+  background-color: rgba(256,256,256, 0.6);
+  top: 45px;
+  left: 100px;
+  width: 90%;
+  height: 88%;
+}
+
+.supporting * {
+  position: relative;
+}
+
+.supporting .col {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  display: inline-block;
+  height: 200px;
+  width: 400px;
+  margin : 2.2em 3em 0 3em;
+}
+
+.supporting img {
+  height: 32px;
+}
+
+.supporting h4 {
+  font-family: "Fauna One", sans-serif;
+  font-size: 23px;
+}
+
+.supporting p {
+  font-weight: 400;
+  font-family: "Cormorant";
+  font-size: 1.4em;
+  line-height: 16px;
+  padding: 10 20px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.supporting a {
+  background-color: white;
+  color: #333333;
+  font-family: 'Fauna One', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 1px solid #333333; 
+  margin: 20px, auto;
+  width: 100%;
+}
+
+.supporting a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+
+
+.italic {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+#base-montserrat {              
+  padding-top: 4em;
+  padding-bottom: 4em;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+}
+
+#base-montserrat p {
+  font-weight: 400;
+  font-size: 1.4em;
+  line-height: 16px;
+  padding: 10 20px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+#base-montserrat a {
+  background-color: white;
+  color: #333333;
+  font-family: 'Fauna One', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 1px solid #333333; 
+  margin: 20px, auto;
+  width: 100%;
+}
+
+#base-montserrat a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+
+
+
+#module3 {
+
+  width: 100%;
+  background-size: cover;
+  text-align: center;
+  position:relative;
+}
+
+
+#module3:before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  color: rgba(256,256,256, 0.2);
+}
+
+#module3 * {
+  position: relative; /* Makes elements display above overlay. */  
+}
+
+
+.container {
+  z-index: 10;
+  border: 0px;
+  margin: 0px;
+  color: #333;
+}
+
+.deco-scroll {
+  background-image: url(img/pic/jonathan-pielmayer-dJe7Vt0dQHM-unsplash_light.jpg);
+  width: 100%;
+  height: 26em;  
+  background-size: cover;
+  background-attachment: fixed, scroll;
+}
+
+.deco-page {
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 30em; 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* UNIVERSAL STYLES */
+  
+  h1 {
+    color: black;
+    padding: 20px;
+    font-size: 28px;                      /* à changer en em plus tard */
+    font-family: "Cormorant";
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    top: 25%;
+    
+  }
+  
+  h2 {
+    padding: 40px 20px 40px 20px;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Fauna One";
+    text-transform: uppercase;
+    color:#333;
+  }
+
+  h3 {
+    font-family: "Yeseva One";
+    font-size: 2em;
+    text-transform: uppercase;
+    color:#333;
+    text-align: center;
+    letter-spacing: 0.04em;
+    
+  }
+
+  h4 {
+    font-family: "Cormorant";
+    font-size: 22px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color:#333;
+  }
+
+  h5 {                            /* '&' black) */
+    font-family:"Playfair";
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    color: #333;
+    margin: .6em;
+    vertical-align: baseline;
+  }
+
+  h6 {                            /* '&' white) */
+    font-family:"Playfair";
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    margin: 0px;
+    vertical-align: baseline;
+  }
+
+
+.contact {
+  margin-top: 4em;
+  margin-bottom: 4em;;
+}
+
+.contact p {
+  font-family : "Montserrat", sans-serif;
+  line-height: 0.5em;
+
+}
+
+
+/* PHOTOS BAS DE PAGE */
+
+.facon-instagram {
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  border:0px;
+  margin: 0px;
+  overflow: hidden;
+
+  
+}
+
+.photo-item {
+  height: 350px;
+  width: 350px;
+  
+}
+
+
+/* FOOTER */
+  
+footer {
+  background-color: #f2d553;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  color: #333;
+  padding: 20px 0;
+  padding-left: 5em;
+  padding-right: 5em;
+  font-size: 0.8em;
+  width: 100%;
+  line-height: 1.4em;
+  text-decoration: none;
+}
+
+
+
+.propulsed {
+  position: relative;
+  bottom: 20px;
+  z-index: 11;
+  display: block;
+  float: right;
+
+}
+
+.beyondframes {
+ font-family: "Graphit", sans-serif;   
+ font-size: 1.1em;
+ margin-left: 8px; 
+}
+
+
+
+
+
+
+

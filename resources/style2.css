@@ -1,0 +1,44 @@
+/* RESET SIMPLIFIE */
+/* 
+html, body {
+  margin:0;
+  font-family: 'Cormorant';
+  font-size:16px;
+*/
+
+@font-face {
+    font-family: "Cormorant";
+    src: url(font/Cormorant_Garamond/CormorantGaramond-Bold.ttf) format('truetype'),
+         url(font/Cormorant_Garamond/CormorantGaramond-BoldItalic.ttf) format('truetype'),
+         url(font/Cormorant_Garamond/CormorantGaramond-Italic.ttf) format('truetype'),
+         url(font/Cormorant_Garamond/CormorantGaramond-Light.ttf) format('truetype'),
+         url(font/Cormorant_Garamond/CormorantGaramond-LightItalic.ttf) format('truetype'),
+         url(font/Cormorant_Garamond/CormorantGaramond-Medium.ttf) format('truetype'),
+         url(font/Cormorant_Garamond/CormorantGaramond-MediumItalic.ttf) format('truetype'),
+         url(font/Cormorant_Garamond/CormorantGaramond-Regular.ttf) format('truetype'),
+         url(font/Cormorant_Garamond/CormorantGaramond-SemiBold.ttf) format('truetype'),
+         url(font/Cormorant_Garamond/CormorantGaramond-SemiBoldItalic.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Fauna One";
+    src: url(font/Fauna_One/FaunaOne-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Playfair";
+    src: url(font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf) format('truetype'),
+         url(font/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf)format('truetype');
+}
+@font-face {
+    font-family: "Yeseva One";
+    src: url(font/Yeseva_One/YesevaOne-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Graphit";
+    src: url(font/Graphit/Graphit-Regular.otf) format('opentype'),
+       url(font/Graphit/Graphit-Regular.woff) format('woff');
+}
+@font-face {
+    font-family: "Mathilde";
+    src: url(font/Mathilde.otf/mathilde.otf) format('opentype');
+}
+
