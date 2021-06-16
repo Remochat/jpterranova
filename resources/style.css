@@ -21,7 +21,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 16px;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -55,7 +55,7 @@ html, body {
   margin:0;
   pading:0;
   font-family: 'Cormorant';
-  font-size:16px;
+  font-size: 16px;
 */
 
 @font-face {
@@ -201,9 +201,18 @@ main h2 {
 
   .draw-item img {
     background-size: cover;
-    height: 6em;
+    width: 200px;
   }
  
+  img[src*='lemon'] {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 140px;
+    height: auto;
+  }
+
 
 .edito {
   margin: 2em auto;
@@ -226,12 +235,14 @@ main h2 {
 }
 
 .titremodule2 {
-  font-family: "Yeseva One";
+  font-family: "Yeseva One", sans-serif;
   font-size: 1.5em;
   text-transform: uppercase;
   color:#f2b33d;
   text-align: center;
   letter-spacing: 0.04em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*
@@ -243,12 +254,14 @@ main h2 {
   color: red;
 }
 
-.bold {
-  font-weight: 500;
-}
+
 */
 
 /* MODULE #3 */
+
+.bold {
+  font-weight: 500;
+}
 
 .supporting {              /*fond img utilisé sur modules */
   position: relative;
@@ -264,11 +277,13 @@ main h2 {
   position: absolute;
   content:"";
   background-color: rgba(256,256,256, 0.6);
-  top: 45px;
-  left: 100px;
   width: 90%;
   height: 88%;
+  top: 45px;
+  left: 100px;
+
 }
+
 
 .supporting * {
   position: relative;
@@ -368,27 +383,24 @@ main h2 {
 
 
 
+.module3 {
 
-#module3 {
-
-  width: 100%;
   background-size: cover;
-  text-align: center;
   position:relative;
 }
 
-
-#module3:before {
+/*
+.module3:before {
   position: absolute;
   content: "";
   top: 0px;
-  right: 0;
-  width: 50%;
+  right: 0px;
   height: 50%;
   color: rgba(256,256,256, 0.2);
 }
+*/
 
-#module3 * {
+.module3 * {
   position: relative; /* Makes elements display above overlay. */  
 }
 
@@ -418,15 +430,41 @@ main h2 {
   background-repeat: no-repeat;
 }
 
+.plain-text {
+margin: 4rem 20rem;
+font-size: 1.2rem;
+line-height: 2rem;
+font-family: 'Montserrat', sans-serif;
+}
+
+.plain-text p,{
+  text-align: left;
+
+}
+
+.plain-text li {
+  margin-left: 8rem;
+  margin-top: 1rem;
+}
+
+.plain-text h4 {
+  font-family: "Yeseva One";
+  color: #f2b33d;
+  font-size: 1.8rem;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+
+
 /* UNIVERSAL STYLES */
   
   h1 {
     color: black;
     padding: 20px;
-    font-size: 28px;                      /* à changer en em plus tard */
+    font-size: 1,75rem;                     
     font-family: "Cormorant";
     text-transform: uppercase;
-    letter-spacing: 0.2em;
     top: 25%;
     
   }
@@ -441,7 +479,7 @@ main h2 {
   }
 
   h3 {
-    font-family: "Yeseva One";
+    font-family: "Yeseva One", sans-serif;
     font-size: 2em;
     text-transform: uppercase;
     color:#333;
@@ -479,7 +517,6 @@ main h2 {
     vertical-align: baseline;
   }
 
-
 .contact {
   margin-top: 4em;
   margin-bottom: 4em;;
@@ -491,26 +528,25 @@ main h2 {
 
 }
 
+/* PHOTOS SCROLL HORIZONTAL */
 
-/* PHOTOS BAS DE PAGE */
-
-.facon-instagram {
+.scroll {
   display: flex;
-  justify-content: flex-start;
-  align-items:center;
-  border:0px;
-  margin: 0px;
-  overflow: hidden;
-
-  
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .photo-item {
   height: 350px;
   width: 350px;
-  
+  margin-right: 5px;
+  flex: 0 0 auto;
 }
-
 
 /* FOOTER */
   
@@ -528,26 +564,76 @@ footer {
   text-decoration: none;
 }
 
-
-
 .propulsed {
   position: relative;
   bottom: 20px;
   z-index: 11;
   display: block;
   float: right;
-
 }
 
 .beyondframes {
  font-family: "Graphit", sans-serif;   
  font-size: 1.1em;
- margin-left: 8px; 
+ margin-left: 1rem;
 }
 
+.anchor {
+  position: fixed;
+  bottom: 100px;
+  width: 100%;
+  }
+    
+.anchor img {
+  width: 20px;
+  margin-right: 6rem;
+  float: right;
+  }
 
+html { scroll-behavior: smooth; }
 
+/*
+@media only screen and (max-width: 560px) { 
+  .titremodule2 {
+    width: 180px;
+  }
+}
 
+@media only screen and (min-width: 560px) and (max-width: 1099px) { 
+  .titremodule2 {
+    width: 260px;
+  }
+}
+*/
 
+@media only screen and (max-width: 960px) {
+  #module3:before {
+    width: 500px;
+  }
+
+  footer li {
+    font-size: 0.7rem;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .propulsed {
+    float: left;
+    top: 0.07rem;
+  }
+}
+
+  @media only screen and (max-width: 1239px) {
+    .titremodule2 {
+      width: 400px;
+      text-align: center;
+    }
+  }
+
+  @media only screen and (min-width: 1240px) {
+    .titremodule2 {
+      width: 500px;
+    }
+  }
 
 
