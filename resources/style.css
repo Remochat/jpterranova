@@ -412,6 +412,28 @@ main h2 {
   color: #333;
 }
 
+
+.container-menu {
+  display: flex;
+  align-content: inline-block;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  padding-top: 40px;
+  padding-bottom: 4rem;
+  text-align: center;
+  width: 100%;
+  
+}
+.contanier-menu.col2 {
+  font-family: 'Montserrat', sans-serif;
+  height: 200px;
+  width: 400px;
+  margin : 2.2em 3em 0 3em;
+}
+
+
+
+
 .deco-scroll {
   background-image: url(img/pic/jonathan-pielmayer-dJe7Vt0dQHM-unsplash_light.jpg);
   width: 100%;
@@ -421,17 +443,18 @@ main h2 {
 }
 
 .deco-page {
-  top: 0;
-  left: 0;
+  display: flex;
+  width: 100%;
+  height: 30em;
+  align-items: center;
   overflow: hidden;
-  height: 30em; 
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
+
+
 .plain-text {
-margin: 4rem 20rem;
+margin: 4rem auto;
+width: 80%;
 font-size: 1.2rem;
 line-height: 2rem;
 font-family: 'Montserrat', sans-serif;
@@ -443,17 +466,20 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .plain-text li {
-  margin-left: 8rem;
+  margin-left: 10%;
   margin-top: 1rem;
 }
 
 .plain-text h4 {
   font-family: "Yeseva One";
-  color: #f2b33d;
+  color: #555;
   font-size: 1.8rem;
   text-align: left;
   margin-top: 2rem;
 }
+
+
+
 
 
 
@@ -607,10 +633,44 @@ html { scroll-behavior: smooth; }
 */
 
 @media only screen and (max-width: 960px) {
+
   #module3:before {
     width: 500px;
   }
 
+  .plain-text  {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    text-align: justify;
+  }
+
+  .plain-text h4 {
+  text-align: center;
+  line-height: 2rem;
+  }
+
+  .deco-page {
+  display: flex;
+  width: 100%;
+  height: 10rem;
+  align-items: center;
+  overflow: hidden;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  .plain-text h4 {
+    font-size : 1.2rem;
+    line-height: 1.2rem;
+  }
+
+
+  footer {
+    padding-top:0;
+    /*visibility: hidden;*/
+  }  
   footer li {
     font-size: 0.7rem;
     margin-left: 5px;
@@ -621,6 +681,10 @@ html { scroll-behavior: smooth; }
     float: left;
     top: 0.07rem;
   }
+
+
+  
+
 }
 
   @media only screen and (max-width: 1239px) {
