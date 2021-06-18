@@ -94,6 +94,9 @@ html, body {
     src: url(font/Mathilde.otf/mathilde.otf) format('opentype');
 }
 
+html { 
+  scroll-behavior: smooth; 
+}
 
 * {
   box-sizing: border-box;
@@ -108,11 +111,7 @@ p {
   min-width: 200px;
 }
 
-/*
-a:hover {
-  background-color: gold;
-}
-*/
+
 
   /* NAVIGATION */
 
@@ -159,7 +158,7 @@ a:hover {
   text-align:center;
 }
 
-#banner1:before {       /* Overlay */
+/* #banner1:before {       /* Overlay */
   position: absolute;
   content: "";
   top: 0;
@@ -168,12 +167,12 @@ a:hover {
   height: 100%;
   background-color: rgba(20,20,20, 0.20);
 }
-
-
+*/
+/*
 #banner1 * {
   position: relative;       /* Makes elements display above overlay. */
-
 }
+*/
 
 main h1 {
   color: #fff;
@@ -192,70 +191,58 @@ main h2 {
   top: 30%;
  }
 
-
-  .draw-item {
-    background-size: cover;
-    margin: 1em auto;
-    align-content: center;
-  }
-
-  .draw-item img {
-    background-size: cover;
-    width: 200px;
-  }
- 
-  img[src*='lemon'] {
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    width: 140px;
-    height: auto;
-  }
-
-
-.edito {
-  margin: 2em auto;
-  font-size: 1.3em;
+.draw-item {
+  margin: 1em auto;
   text-align: center;
-  width: 36%;
-  color:#333;
-  line-height: 1.6em;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-
 }
 
-.base {
+.draw-item img {
+  width: 200px;
+}
+ 
+img[src*='lemon'] {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 150px;
+  height: auto;
+}
+/*
+.container-edito {
   background-color: #fff;
+  width: 100%;
   padding-top: 4em;
   padding-bottom: 4em;
   text-align: center;
-  width: 100%;
-}
+}*/
 
-.titremodule2 {
+.titre-edito {
   font-family: "Yeseva One", sans-serif;
-  font-size: 1.5em;
-  text-transform: uppercase;
   color:#f2b33d;
+  font-size: 2rem;
+  text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.04em;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/*
-.retouche1 {
-  color: red;
+.edito {
+  font-family: 'Montserrat', sans-serif;
+  color:#333;
+  margin: 1rem auto;
+  width: 46%;
+  line-height: 2rem;
+  font-weight: 400;
+  text-align: center;
 }
 
-.retouche2 {
-  color: red;
+.edito p {
+  padding-top: 0.5rem;
 }
 
-
-*/
 
 /* MODULE #3 */
 
@@ -283,7 +270,6 @@ main h2 {
   left: 100px;
 
 }
-
 
 .supporting * {
   position: relative;
@@ -337,31 +323,30 @@ main h2 {
   color: #fff;
 }
 
-
-
 .italic {
   font-style: italic;
   font-weight: lighter;
 }
 
-#base-montserrat {              
+.container-neutral {    /*-fond blanc de base utilisé pour module edito, contact et menu*/         
+  background-color: #fff;
   padding-top: 4em;
   padding-bottom: 4em;
-  background-size: cover;
   text-align: center;
   width: 100%;
 }
 
-#base-montserrat p {
+.container-neutral p {  /*texte du module contact */
   font-weight: 400;
   font-size: 1.4em;
-  line-height: 16px;
+  line-height: 1rem;
   padding: 10 20px;
   margin-bottom: 30px;
   color: #333;
+  width: 100%;
 }
 
-#base-montserrat a {
+.container-neutral a {
   background-color: white;
   color: #333333;
   font-family: 'Fauna One', sans-serif;
@@ -376,15 +361,13 @@ main h2 {
   width: 100%;
 }
 
-#base-montserrat a:hover {
+.container-neutral a:hover {
   background-color: #333;
   color: #fff;
+  width: 100%;
 }
 
-
-
 .module3 {
-
   background-size: cover;
   position:relative;
 }
@@ -404,14 +387,12 @@ main h2 {
   position: relative; /* Makes elements display above overlay. */  
 }
 
-
 .container {
   z-index: 10;
   border: 0px;
   margin: 0px;
   color: #333;
 }
-
 
 .container-menu {
   display: flex;
@@ -424,15 +405,12 @@ main h2 {
   width: 100%;
   
 }
-.contanier-menu.col2 {
+.container-menu .col2 {
   font-family: 'Montserrat', sans-serif;
   height: 200px;
   width: 400px;
   margin : 2.2em 3em 0 3em;
 }
-
-
-
 
 .deco-scroll {
   background-image: url(img/pic/jonathan-pielmayer-dJe7Vt0dQHM-unsplash_light.jpg);
@@ -442,15 +420,7 @@ main h2 {
   background-attachment: fixed, scroll;
 }
 
-.deco-page {
-  display: flex;
-  width: 100%;
-  height: 30em;
-  align-items: center;
-  overflow: hidden;
-}
-
-
+/*INFO LEGALES*/
 
 .plain-text {
 margin: 4rem auto;
@@ -478,10 +448,7 @@ font-family: 'Montserrat', sans-serif;
   margin-top: 2rem;
 }
 
-
-
-
-
+/*----------------------------*/
 
 /* UNIVERSAL STYLES */
   
@@ -506,7 +473,7 @@ font-family: 'Montserrat', sans-serif;
 
   h3 {
     font-family: "Yeseva One", sans-serif;
-    font-size: 2em;
+    font-size: 2rem;
     text-transform: uppercase;
     color:#333;
     text-align: center;
@@ -516,7 +483,7 @@ font-family: 'Montserrat', sans-serif;
 
   h4 {
     font-family: "Cormorant";
-    font-size: 22px;
+    font-size: 1.375rem;
     padding: 20px;
     text-align: center;
     text-transform: uppercase;
@@ -543,6 +510,28 @@ font-family: 'Montserrat', sans-serif;
     vertical-align: baseline;
   }
 
+.bandeau-image {
+  max-height: 30em;
+  width: 100%;
+}
+
+.deco-page {
+  display: flex;
+  width: 100%;
+  height: 30em;
+  align-items: center;
+  overflow: hidden;
+}
+
+/*
+  .deco-page {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
+
 .contact {
   margin-top: 4em;
   margin-bottom: 4em;;
@@ -551,7 +540,6 @@ font-family: 'Montserrat', sans-serif;
 .contact p {
   font-family : "Montserrat", sans-serif;
   line-height: 0.5em;
-
 }
 
 /* PHOTOS SCROLL HORIZONTAL */
@@ -608,15 +596,15 @@ footer {
   position: fixed;
   bottom: 100px;
   width: 100%;
-  }
+}
     
 .anchor img {
   width: 20px;
   margin-right: 6rem;
   float: right;
-  }
+}
 
-html { scroll-behavior: smooth; }
+
 
 /*
 @media only screen and (max-width: 560px) { 
@@ -634,27 +622,31 @@ html { scroll-behavior: smooth; }
 
 @media only screen and (max-width: 960px) {
 
+  .edito {
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    width: 80%;
+    line-height: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .contact {
+    font-size: 0.8rem;
+    }
+
   #module3:before {
     width: 500px;
   }
 
-  .plain-text  {
-    font-size: 0.8rem;
+  #p-infos p,
+  #p-infos li {
+    font-size: 0.9rem;
     line-height: 1.5rem;
     text-align: justify;
-  }
-
-  .plain-text h4 {
-  text-align: center;
-  line-height: 2rem;
-  }
-
-  .deco-page {
-  display: flex;
-  width: 100%;
-  height: 10rem;
-  align-items: center;
-  overflow: hidden;
   }
 
   h3 {
@@ -664,13 +656,23 @@ html { scroll-behavior: smooth; }
   .plain-text h4 {
     font-size : 1.2rem;
     line-height: 1.2rem;
-  }
+    text-align: center;
+    line-height: 2rem;
+    }
 
+  .deco-page {
+  display: flex;
+  width: 100%;
+  height: 10rem;
+  align-items: center;
+  overflow: hidden;
+  }
 
   footer {
     padding-top:0;
     /*visibility: hidden;*/
   }  
+
   footer li {
     font-size: 0.7rem;
     margin-left: 5px;
@@ -681,9 +683,6 @@ html { scroll-behavior: smooth; }
     float: left;
     top: 0.07rem;
   }
-
-
-  
 
 }
 
