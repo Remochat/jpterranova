@@ -243,14 +243,13 @@ img[src*='lemon'] {
   padding-top: 0.5rem;
 }
 
-
-/* MODULE #3 */
-
 .bold {
   font-weight: 500;
 }
 
-.supporting {              /*fond img utilisé sur modules */
+/* MODULE #3 */    /*presentation menus*/
+
+.supporting {              /*fond img presentation menus */
   position: relative;
   background: url("img/pic/brooke-lark-kXQ3J7_2fpc-unsplash_light.jpg")center center no-repeat; padding-top: 80px;
   padding-top: 80px;
@@ -328,23 +327,27 @@ img[src*='lemon'] {
   font-weight: lighter;
 }
 
-.container-neutral {    /*-fond blanc de base utilisé pour module edito, contact et menu*/         
+
+
+
+.container-neutral {    /*fond blanc de base utilisé pour contact*/         
+  font-family: 'Montserrat', sans-serif;
   background-color: #fff;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  margin: 4rem auto;
   text-align: center;
   width: 100%;
 }
 
 .container-neutral p {  /*texte du module contact */
   font-weight: 400;
-  font-size: 1.4em;
+  font-size: 1.2rem;
   line-height: 1rem;
   padding: 10 20px;
   margin-bottom: 30px;
   color: #333;
   width: 100%;
 }
+
 
 .container-neutral a {
   background-color: white;
@@ -394,35 +397,21 @@ img[src*='lemon'] {
   color: #333;
 }
 
-.container-menu {
-  display: flex;
-  align-content: inline-block;
-  margin-left: 20rem;
-  margin-right: 20rem;
-  padding-top: 40px;
-  padding-bottom: 4rem;
-  text-align: center;
-  width: 100%;
-  
-}
-.container-menu .col2 {
-  font-family: 'Montserrat', sans-serif;
-  height: 200px;
-  width: 400px;
-  margin : 2.2em 3em 0 3em;
-}
-
 .deco-scroll {
-  background-image: url(img/pic/jonathan-pielmayer-dJe7Vt0dQHM-unsplash_light.jpg);
+  background-image: url(img/pic/jonathan-pielmayer-dJe7Vt0dQHM-unsplash_light.jpg); 
   width: 100%;
   height: 26em;  
   background-size: cover;
   background-attachment: fixed, scroll;
 }
 
-/*INFO LEGALES*/
+/* ---------- PROCESS & MENUS ---------- */
 
-.plain-text {
+
+
+/* ---------- INFO LEGALES ---------- */
+
+.plain-text {                       /*container de base utilisé par mentions legales, edito et process*/
 margin: 4rem auto;
 width: 80%;
 font-size: 1.2rem;
@@ -430,9 +419,21 @@ line-height: 2rem;
 font-family: 'Montserrat', sans-serif;
 }
 
-.plain-text p,{
-  text-align: left;
+.plain-text .col {
+  font-family: ; 
+  text-align: center;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  padding-top: 80px;
+}
 
+.plain-text img {
+  height: 32px;
+}
+
+.plain-text p {
+  text-align: left;
 }
 
 .plain-text li {
