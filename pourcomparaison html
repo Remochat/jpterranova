@@ -6,10 +6,7 @@
         <title>Jean-Paul Terranova - Chef à domicile</title>
         <link rel="stylesheet" href="./resources/style.css"> 
 
-        <!-- JAVASCRIPT -->
-        <script type="text/javascript" src="resources/script.js"></script>
-      
-    <!-- REQUIRED META TAGS -->
+        <!-- REQUIRED META TAGS -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
