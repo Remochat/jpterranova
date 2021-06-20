@@ -175,6 +175,7 @@ p {
   margin : 0 auto 10vw auto;
   align-items:center; 
   display: flex;
+
    
 }
 
@@ -507,7 +508,6 @@ img[src*='toque'] {
   border: 0px;
   margin: 0px;
   color: #333;
-
 }
 
 .deco-scroll {
@@ -516,6 +516,15 @@ img[src*='toque'] {
   height: 26em;  
   background-size: cover;
   background-attachment: fixed, scroll;
+}
+
+.deco-scroll2 {
+  background-image: url(img/pic/max-delsid-81QFH8r4xog-unsplash_light.jpg); 
+  width: 100%;
+  height: 20rem;  
+  background-size: cover;
+  background-attachment: fixed, scroll;
+  margin-bottom: 4rem;
 }
 
 /* ---------- PROCESS & MENUS ---------- */  
@@ -891,11 +900,13 @@ footer {
 */
 
 
-@media only screen and (max-width: 320px) {
-
+@media only screen and (max-width: 360px) {
+  footer {
+   visibility: hidden;
+  }
 } 
 
-@media only screen and (max-width: 960px) {
+@media only screen and (min-width: 361px) and (max-width: 960px) {
 
   .edito {
     font-size: 1.2rem;
@@ -951,14 +962,23 @@ footer {
   }
 
   footer {
-    padding-top:0;
-    /*visibility: hidden;*/
-  }  
+    line-height: 0.7rem;
+
+   }  
 
   footer li {
-    font-size: 0.7rem;
-    margin-left: 5px;
-    margin-right: 5px;
+    font-size: 0.6rem;
+    text-align: center;
+  }
+
+.container {
+  flex-direction: column;
+  display: flex;
+}
+
+  .beyondframes {
+    padding-left: 0;
+    margin-left:0;
   }
 
   .propulsed {
