@@ -943,9 +943,16 @@ footer {
   .supporting .col p {
     line-height: 1.4frem;
   }
+
 } 
 
 @media only screen and (min-width: 361px) and (max-width: 960px) {
+  .deco-scroll,
+  .deco-scroll2 {
+    /*object-fit: cover;
+    object-position: bottom;*/
+    background-attachment: unset;
+  }
 
   .edito {
     font-size: 1.2rem;
