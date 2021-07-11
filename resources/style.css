@@ -170,9 +170,7 @@ p {
 
 .container-brand {
   line-height: 1.4rem;
-  height: 200px;
-  width: 800px;
-  margin : 0 auto 10vw auto;
+  margin : 0 10vw 10vh auto;
   align-items:center; 
   display: flex;
 
@@ -182,6 +180,7 @@ p {
 .square {
   width: 20vw;
   height: 20vw;
+  background-color: rgba(255, 255, 255, 0.8);
   border:solid 6px #f2d553;
   min-width: 200px;
   min-height: 200px;
@@ -194,9 +193,17 @@ p {
 }
 
 .square li {
-  line-height: 4.2vw;
+  line-height: 4.2vh;
   margin: 0 auto;
 
+}
+
+.square ul {
+  vertical-align: middle;
+  padding-top: auto;
+  padding-bottom: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 /*
@@ -216,7 +223,7 @@ p {
   color: #7B3F36;
   font-weight: 100;
   font-style: italic;
-  margin-top: 2vw;
+  margin-top: 0;
 }
 
 #brand2 {
@@ -374,19 +381,31 @@ img[src*='toque'] {
   width: 100%;
 }
 
-.supporting:before {            /* Overlay */
+.supporting::before {
+  position: absolute;
+  display: block;
+  top:5%;
+  content: "";
+  background-color: rgba(256,256,256, 0.80);
+  width: 100%;
+  height: 90%;
+}
+
+/*
+.supporting:before {            Overlay
   position: absolute;
   content:"";
-  background-color: rgba(256,256,256, 0.6);
+  background-color: rgba(256,256,256, 0.75);
   width: 90%;
   height: 88%;
   top: 45px;
   left: 100px;
 
-}
+}*/
 
 .supporting * {
   position: relative;
+  width: 100%;
 }
 
 .supporting .col {
@@ -484,7 +503,7 @@ img[src*='toque'] {
 }
 
 .module3 {
-  background-size: cover;
+  /*background-size: cover; */
   position:relative;
 }
 
@@ -501,6 +520,17 @@ img[src*='toque'] {
 
 .module3 * {
   position: relative; /* Makes elements display above overlay. */  
+}
+
+.module3 h5 {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  width: 60%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8rem;
+  min-width: 200px;
 }
 
 .container {
@@ -868,7 +898,7 @@ footer {
 .beyondframes {
  font-family: "Graphit", sans-serif;   
  font-size: 1.1em;
- margin-left: 1rem;
+ margin-left: 0.8rem;
 }
 
 .anchor {
@@ -904,6 +934,15 @@ footer {
   footer {
    visibility: hidden;
   }
+
+  .supporting .col {
+    width: 250px;
+    line-height: 1.4rem;
+  }
+
+  .supporting .col p {
+    line-height: 1.4frem;
+  }
 } 
 
 @media only screen and (min-width: 361px) and (max-width: 960px) {
@@ -915,7 +954,8 @@ footer {
     line-height: 2rem;
   }
 
-  p {
+  p,
+  .module3 h5 {
     font-size: 1rem;
     line-height: 1.4rem;
   }
@@ -924,7 +964,7 @@ footer {
     font-size: 0.8rem;
     }
 
-  #module3:before {
+  #module3::before {
     width: 500px;
   }
 
@@ -961,6 +1001,14 @@ footer {
     line-height: 1.4rem;
   }
 
+  .supporting .col {
+    width: 250px;
+  }
+
+  .supporting .col p {
+    line-height: 1.4rem;
+  }
+
   footer {
     line-height: 0.7rem;
 
@@ -985,13 +1033,11 @@ footer {
     float: left;
     top: 0.07rem;
   }
-
 }
 
-  @media only screen and (max-width: 1239px) {
-    .titremodule2 {
-      width: 400px;
-      text-align: center;
+  @media only screen and (min-width: 960px) {
+    .square {
+      background-color:rgba(255, 255, 255, 0.8)
     }
   }
 
@@ -999,6 +1045,36 @@ footer {
     .titremodule2 {
       width: 500px;
     }
+    .container-brand {
+      margin: 0 12vw 10vh auto;
+    }
+    .square {
+      background-color:rgba(255, 255, 255, 0.5)
+    }
+
+    #brand1 {
+      padding-bottom: 8%;
+    }
   }
 
+  @media only screen and (min-width: 1380px) {
+    #brand4 {
+      padding-top: 12%;
+    }
+  }
 
+  @media only screen and (max-width:1239px) {
+    .titremodule2 {
+      width: 400px;
+      text-align: center;
+    }  
+    #brand1 {
+      font-size: 180%;
+    }
+    #brand2 {
+      font-size: 190%;
+    }
+    #brand4 {
+      font-size: 130%;
+    }
+  }
