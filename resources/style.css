@@ -120,6 +120,60 @@ p {
 
   /* NAVIGATION */
 
+.header {
+  display: inline-block;
+  width: 100%;
+  padding: 25px 6rem;
+  background-color: #fff;
+  position: relative;
+}
+
+.logo {
+  float: left;
+  padding-left: 2rem;
+}
+
+.header,nav {
+  float: right;
+}
+
+.header,nav ul li {
+  display: inline-block;
+  padding: 2rem 25px;
+}
+
+.header,nav ul li a {
+  text-decoration: none;
+  display: inline-block;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  font-family: "Fauna One";
+  vertical-align: middle;
+}
+.header,nav ul li:last-child {
+  margin-right: 2rem;
+  margin-left: 0;
+}
+
+.toggle-btn {
+  width: 35px;
+  position: absolute;
+  right: 80px;
+  top: 1.8rem;
+  display: none;
+}
+
+.toggle-btn span {
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  float: left;
+  margin-bottom: 8px;
+}
+
+/*
 .nav-list {
   padding: 1rem 0;
   display: flex;
@@ -150,6 +204,7 @@ p {
   margin-right: 10rem;
   margin-left: 0;
 }
+*/
 
 
   /* MAIN */
@@ -1067,6 +1122,31 @@ footer {
   @media only screen and (min-width: 1380px) {
     #brand4 {
       padding-top: 12%;
+    }
+  }
+
+  @media only screen and (max-width: 991px){
+    .toggle-btn{
+      display: block;
+    }
+
+    .header,nav {
+      display: none;
+      width: 100%;
+      text-align: center;
+      border-top: 0.2px solid rgba(0, 0, 0, 0.5);
+      padding-top: 20px;
+      margin-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .header,nav ul li{
+      padding: 15px 0px;
+      width: 100%;
+    }
+
+    .header,nav.show {
+      display:block;
     }
   }
 

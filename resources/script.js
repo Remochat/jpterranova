@@ -1,3 +1,9 @@
+function myFunction() {
+  var navbar = document.getElementById('nav');
+  navbar.classList.toggle('show');
+}
+
+
 const items = document.querySelectorAll('img');
 const itemCount = items.length;
 const nextItem = document.querySelector('.next');
@@ -43,3 +49,4 @@ function keyPress(e) {
 nextItem.addEventListener('click', showNextItem);
 previousItem.addEventListener('click', showPreviousItem);
 document.addEventListener('keydown', keyPress);
+
