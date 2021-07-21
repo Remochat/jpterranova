@@ -4,7 +4,7 @@ function myFunction() {
 }
 
 
-const items = document.querySelectorAll('img');
+const items = document.querySelectorAll('.slider > img');
 const itemCount = items.length;
 const nextItem = document.querySelector('.next');
 const previousItem = document.querySelector('.previous');
