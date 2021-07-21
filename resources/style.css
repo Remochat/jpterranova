@@ -49,15 +49,6 @@ table {
 	border-spacing: 0;
 }
 
-/* RESET SIMPLIFIE */
-/* 
-html, body {
-  margin:0;
-  pading:0;
-  font-family: 'Cormorant';
-  font-size: 16px;
-*/
-
 @font-face {
     font-family: "Cormorant";
     src: url(font/Cormorant_Garamond/CormorantGaramond-Bold.ttf) format('truetype'),
@@ -99,17 +90,6 @@ html {
 }
 
 /*ajout pour slidebar*/
-/*
-* {
-  box-sizing: border-box;
-  &::before, &::after {
-    box-sizing: border-box;
-  }
-}
-*/
-
-
-/*ajout pour slidebar*/
 
 a {
   text-decoration: none;
@@ -119,8 +99,6 @@ a {
 p {
   min-width: 200px;
 }
-
-
 
   /* NAVIGATION */
 
@@ -137,16 +115,16 @@ p {
   padding-left: 2rem;
 }
 
-.header,nav {
+header nav {
   float: right;
 }
 
-.header,nav ul li {
+header nav ul li {
   display: inline-block;
-  padding: 2rem 25px;
-}
+  padding: 2rem;
+} 
 
-.header,nav ul li a {
+header nav ul li a {
   text-decoration: none;
   display: inline-block;
   color: #333;
@@ -155,7 +133,8 @@ p {
   font-family: "Fauna One";
   vertical-align: middle;
 }
-.header,nav ul li:last-child {
+
+header nav ul li:last-child {
   margin-right: 2rem;
   margin-left: 0;
 }
@@ -173,43 +152,9 @@ p {
   width: 100%;
   height: 2px;
   background-color: #333;
-  float: left;
+  /*float: left;*/
   margin-bottom: 8px;
 }
-
-/*
-.nav-list {
-  padding: 1rem 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items:center;
-  height: 5rem;
-}
-
-.nav-item {
-  margin-right: 6rem;
-  text-transform: lowercase;
-  font-weight:600;
-  
-}
-
-.nav-item a {
-  color: #333;
-  letter-spacing: 1.2px;
-  font-family: "Fauna One";
-}
-
-.nav-item:first-child {
-  margin-right: auto;
-  margin-left: 6rem;
-}
-
-.nav-item:last-child {
-  margin-right: 10rem;
-  margin-left: 0;
-}
-*/
-
 
   /* MAIN */
 
@@ -224,7 +169,6 @@ p {
     align-items: center;
     display: flex;
     width: 100%;
-    
   }
 
 .container-brand {
@@ -232,8 +176,6 @@ p {
   margin : 0 10vw 10vh auto;
   align-items:center; 
   display: flex;
-
-   
 }
 
 .square {
@@ -246,15 +188,11 @@ p {
   align-items: center;
   display: flex;
   flex-direction: column;
-  
-
-
 }
 
 .square li {
   line-height: 4.2vh;
   margin: 0 auto;
-
 }
 
 .square ul {
@@ -264,17 +202,6 @@ p {
   margin-top: auto;
   margin-bottom: auto;
 }
-
-/*
-h1 {
- font-size: 5.9vw;
-}
-h2 {
- font-size: 3.0vh;
-}
-p {
- font-size: 2vmin;
-}*/
 
 #brand1 {
   font-family: "Raleway", sans-serif;
@@ -291,7 +218,6 @@ p {
   color: #7B3F36;
 }
 
-
 #brand4 {
   font-family: "Yeseva One", sans-serif;
   font-size: 2vw;
@@ -303,16 +229,7 @@ p {
   position: relative;
   display: block;
 }
-/*
- #banner1:before {       /// Overlay ///
-  position: absolute;
-  content: "";
-  top: 0;
-  left:0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, transparent, 70%, white);
-}
+
 */
 #banner1:before div {
     width: 120px;
@@ -338,28 +255,7 @@ main h2 {
   font-size: 2vw;
   text-align: center;
   top: 30%;
-
 }
-
-/*
-img[src*='text'] {
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  width: 400px;
-  height: auto;
-  position: relative;
-}
-
-img[src*='frame'] {
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  width: 400px;
-  height: auto;
-}*/
 
 .draw-item {
   margin: 1rem auto 1rem auto;
@@ -387,16 +283,6 @@ img[src*='toque'] {
   width: 200px;
   height: auto;
 }
-
-
-/*
-.container-edito {
-  background-color: #fff;
-  width: 100%;
-  padding-top: 4em;
-  padding-bottom: 4em;
-  text-align: center;
-}*/
 
 .titre-edito {
   font-family: "Yeseva One", sans-serif;
@@ -449,18 +335,6 @@ img[src*='toque'] {
   width: 100%;
   height: 90%;
 }
-
-/*
-.supporting:before {            Overlay
-  position: absolute;
-  content:"";
-  background-color: rgba(256,256,256, 0.75);
-  width: 90%;
-  height: 88%;
-  top: 45px;
-  left: 100px;
-
-}*/
 
 .supporting * {
   position: relative;
@@ -520,7 +394,6 @@ img[src*='toque'] {
   font-weight: lighter;
 }
 
-
 .container-neutral {    /*fond blanc de base utilisé pour contact*/         
   font-family: 'Montserrat', sans-serif;
   background-color: #fff;
@@ -538,7 +411,6 @@ img[src*='toque'] {
   color: #333;
   width: 100%;
 }
-
 
 .container-neutral a {
   background-color: white;
@@ -565,17 +437,6 @@ img[src*='toque'] {
   /*background-size: cover; */
   position:relative;
 }
-
-/*
-.module3:before {
-  position: absolute;
-  content: "";
-  top: 0px;
-  right: 0px;
-  height: 50%;
-  color: rgba(256,256,256, 0.2);
-}
-*/
 
 .module3 * {
   position: relative; /* Makes elements display above overlay. */  
@@ -666,8 +527,6 @@ line-height: 2rem;
   margin-top: 60px;
 }
 
-
-
 .special p {
   margin-top: 8rem;
   padding-top: 2rem;
@@ -676,15 +535,7 @@ line-height: 2rem;
   text-align: center;
   max-width: 1200px;
   margin-bottom: 0;
-
 }
-
-/*
-.plain-text img {
-  height: 32px;
-}
-*/
-
 
 .plain-text li {
   margin-left: 10%;
@@ -703,15 +554,6 @@ line-height: 2rem;
   margin-top: 2rem;
 }
 
-/*
-.yellow-background {
-    background-color: #f2d553;
-    width:100%;  
-}
-*/
-
-
-
 /*----------------------------*/
 
 /* UNIVERSAL STYLES */
@@ -723,7 +565,6 @@ line-height: 2rem;
     font-family: "Cormorant";
     text-transform: uppercase;
     top: 25%;
-    
   }
   
   h2 {
@@ -741,8 +582,7 @@ line-height: 2rem;
     text-transform: uppercase;
     color:#333;
     text-align: center;
-    letter-spacing: 0.04em;
-    
+    letter-spacing: 0.04em; 
   }
 
   h4 {
@@ -793,25 +633,6 @@ line-height: 2rem;
   overflow: hidden;
 }
 
-/*
-  .deco-page {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  }
-
-
-.contact {
-  margin-top: 4em;
-  margin-bottom: 4em;;
-}
-
-.contact p {
-  font-family : "Montserrat", sans-serif;
-  line-height: 0.5em;
-}
-
 /* PHOTOS SCROLL HORIZONTAL */
 
 .scroll {
@@ -831,18 +652,6 @@ line-height: 2rem;
   margin-right: 5px;
   flex: 0 0 auto;
 }
-
-
-/*---------- SLIDE BAR ----------*/
-/* already written on 102
-* {
-  box-sizing: border-box;
-  &::before, &::after {
-    box-sizing: border-box;
-  }
-}
-*/
-
 
 .container-slider {
   max-width: 800px;
@@ -890,7 +699,7 @@ button span {
 .slider-nav li {
   display: flex;
   flex: 2;
-  text-align: center;
+  margin: 0;
 }
 
 .container-slider img {
@@ -904,8 +713,9 @@ button span {
   animation: fadeImg 0.8s;
 }
 
+
 .slider-nav .arrow {
-  flex: 0 0 15%;
+  flex: 0 0 15% ;
 }
 
 .slider-nav a {
@@ -941,7 +751,6 @@ footer {
   padding-left: 5em;
   padding-right: 5em;
   font-size: 0.8em;
-  width: 100%;
   line-height: 1.4em;
   text-decoration: none;
 }
@@ -968,32 +777,16 @@ footer {
     
 .anchor img {
   width: 20px;
-  margin-right: 6rem;
+  margin-right: 10vw;
   float: right;
 }
 
 
-
-/*
-@media only screen and (max-width: 560px) { 
-  .titremodule2 {
-    width: 180px;
-  }
-}
-
-@media only screen and (min-width: 560px) and (max-width: 1099px) { 
-  .titremodule2 {
-    width: 260px;
-  }
-}
-*/
-
-
 @media only screen and (max-width: 360px) {
-  footer {
+  /*footer {
    visibility: hidden;
   }
-
+  */
   .supporting .col {
     width: 250px;
     line-height: 1.4rem;
@@ -1005,7 +798,7 @@ footer {
 
 } 
 
-@media only screen and (min-width: 361px) and (max-width: 960px) {
+@media only screen and /*(min-width: 361px) and */(max-width: 960px) {
   .deco-scroll,
   .deco-scroll2 {
     /*object-fit: cover;
@@ -1051,7 +844,6 @@ footer {
     text-align: center;
     line-height: 2rem;
     }
-
  
   .deco-page {
   display: flex;
@@ -1077,7 +869,6 @@ footer {
 
   footer {
     line-height: 0.7rem;
-
    }  
 
   footer li {
@@ -1134,7 +925,12 @@ footer {
       display: block;
     }
 
-    .header,nav {
+    header nav ul li:last-child {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    header nav {
       display: none;
       width: 100%;
       text-align: center;
@@ -1144,12 +940,12 @@ footer {
       padding-bottom: 10px;
     }
 
-    .header,nav ul li{
+    header nav ul li{
       padding: 15px 0px;
       width: 100%;
     }
 
-    .header,nav.show {
+    header nav.show {
       display:block;
     }
   }
