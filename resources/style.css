@@ -87,7 +87,7 @@ html, body {
 @font-face {
     font-family: "Graphit";
     src: url(font/Graphit/Graphit-Regular.otf) format('opentype'),
-       url(font/Graphit/Graphit-Regular.woff) format('woff');
+      url(font/Graphit/Graphit-Regular.woff) format('woff');
 }
 @font-face {
     font-family: "Mathilde";
@@ -99,16 +99,20 @@ html {
 }
 
 /*ajout pour slidebar*/
+/*
 * {
   box-sizing: border-box;
   &::before, &::after {
     box-sizing: border-box;
   }
 }
+*/
+
+
 /*ajout pour slidebar*/
 
 a {
- text-decoration: none;
+  text-decoration: none;
   color: inherit;
 }
 
