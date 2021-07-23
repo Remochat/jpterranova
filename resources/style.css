@@ -1,6 +1,6 @@
 /* RESET */
 
-/* https://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -142,16 +142,16 @@ header nav ul li:last-child {
 .toggle-btn {
   width: 35px;
   position: absolute;
-  right: 40px;
-  top: 1.8rem;
+  right: 10vw;
+  top: 1.6rem;
   display: none;
 }
 
 .toggle-btn span {
   display: inline-block;
   width: 100%;
-  height: 1.6px;
-  background-color: #555;
+  height: 2px;
+  background-color: #333;
   /*float: left;*/
   margin-bottom: 8px;
 }
@@ -318,17 +318,31 @@ img[src*='toque'] {
 
 .supporting {              /*fond img presentation menus */
   position: relative;
-  background: url("img/pic/brooke-lark-kXQ3J7_2fpc-unsplash-light.jpg")center center no-repeat; padding-top: 80px;
+  background: url("img/pic/brooke-lark-kXQ3J7_2fpc-unsplash_light.jpg")center center no-repeat; padding-top: 80px;
   padding-top: 80px;
   padding-bottom: 6em;
   background-size: cover;
   text-align: center;
   width: 100%;
 }
-
-.supporting h4 {
-  padding: 20px 0;
+.supporting-hors-cadre {
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.supporting-hors-cadre h5 {
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  padding-top: 1.2rem;
+  
+}
+
 
 .supporting::before {
   position: absolute;
@@ -351,7 +365,7 @@ img[src*='toque'] {
   display: inline-block;
   height: 200px;
   width: 400px;
-  margin : 1.4rem 3rem 0 3rem;
+  margin : 2.2em 3em 0 3em;
 }
 
 .supporting img {  /* usefull for icon from menu page*/
@@ -361,6 +375,7 @@ img[src*='toque'] {
 .supporting h4 {
   font-family: "Fauna One", sans-serif;
   font-size: 23px;
+  padding: 0 0 1.2rem 0;
 }
 
 .supporting p {
@@ -368,7 +383,7 @@ img[src*='toque'] {
   font-family: "Cormorant";
   font-size: 1.4em;
   line-height: 1.6rem;
-  padding: 5 20px;
+  padding: 10 20px;
   margin-bottom: 30px;
   color: #333;
 }
@@ -451,7 +466,8 @@ img[src*='toque'] {
   font-family: "Montserrat";
   width: 60%;
   text-align: center;
-  margin: 2rem auto 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1.8rem;
   min-width: 200px;
 }
@@ -596,8 +612,6 @@ line-height: 2rem;
     text-transform: uppercase;
     color:#333;
   }
-
-
 
   h5 {                            /* '&' black) */
     font-family:"Playfair";
@@ -797,6 +811,10 @@ footer {
     line-height: 1.4rem;
   }
 
+  .supporting .col p {
+    line-height: 1.4rem;
+  }
+
 } 
 
 @media only screen and /*(min-width: 361px) and */(max-width: 960px) {
@@ -822,15 +840,7 @@ footer {
 
   .contact {
     font-size: 0.8rem;
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
     }
-
-  .container-neutral h5 {
-    font-size: 1.8rem;
-    color: #333;
-  }
 
   #module3::before {
     width: 500px;
@@ -845,7 +855,6 @@ footer {
 
   h3 {
     font-size: 1.4rem;
-    margin-top: 1.4rem;
   }
 
   .plain-text h4 {
@@ -873,6 +882,10 @@ footer {
     width: 250px;
   }
 
+  .supporting .col p {
+    line-height: 1.4rem;
+  }
+
   footer {
     line-height: 0.7rem;
    }  
@@ -882,10 +895,10 @@ footer {
     text-align: center;
   }
 
-  .container {
-    flex-direction: column;
-    display: flex;
-  }
+.container {
+  flex-direction: column;
+  display: flex;
+}
 
   .beyondframes {
     padding-left: 0;
@@ -914,6 +927,7 @@ footer {
     .square {
       background-color:rgba(255, 255, 255, 0.5)
     }
+
     #brand1 {
       padding-bottom: 8%;
     }
