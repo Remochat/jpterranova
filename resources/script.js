@@ -46,7 +46,9 @@ function keyPress(e) {
   }
 }
 
-nextItem.addEventListener('click', showNextItem);
-previousItem.addEventListener('click', showPreviousItem);
-document.addEventListener('keydown', keyPress);
+if (nextItem != null) {
+  nextItem.addEventListener('click', showNextItem);
+  previousItem.addEventListener('click', showPreviousItem);
+  document.addEventListener('keydown', keyPress);
+}
 
