@@ -1,6 +1,6 @@
 /* RESET */
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* https://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -142,7 +142,7 @@ header nav ul li:last-child {
 .toggle-btn {
   width: 35px;
   position: absolute;
-  right: 80px;
+  right: 40px;
   top: 1.8rem;
   display: none;
 }
@@ -150,8 +150,8 @@ header nav ul li:last-child {
 .toggle-btn span {
   display: inline-block;
   width: 100%;
-  height: 2px;
-  background-color: #333;
+  height: 1.6px;
+  background-color: #555;
   /*float: left;*/
   margin-bottom: 8px;
 }
@@ -318,12 +318,16 @@ img[src*='toque'] {
 
 .supporting {              /*fond img presentation menus */
   position: relative;
-  background: url("img/pic/brooke-lark-kXQ3J7_2fpc-unsplash_light.jpg")center center no-repeat; padding-top: 80px;
+  background: url("img/pic/brooke-lark-kXQ3J7_2fpc-unsplash-light.jpg")center center no-repeat; padding-top: 80px;
   padding-top: 80px;
   padding-bottom: 6em;
   background-size: cover;
   text-align: center;
   width: 100%;
+}
+
+.supporting h4 {
+  padding: 20px 0;
 }
 
 .supporting::before {
@@ -347,7 +351,7 @@ img[src*='toque'] {
   display: inline-block;
   height: 200px;
   width: 400px;
-  margin : 2.2em 3em 0 3em;
+  margin : 1.4rem 3rem 0 3rem;
 }
 
 .supporting img {  /* usefull for icon from menu page*/
@@ -363,8 +367,8 @@ img[src*='toque'] {
   font-weight: 400;
   font-family: "Cormorant";
   font-size: 1.4em;
-  line-height: 16px;
-  padding: 10 20px;
+  line-height: 1.6rem;
+  padding: 5 20px;
   margin-bottom: 30px;
   color: #333;
 }
@@ -447,8 +451,7 @@ img[src*='toque'] {
   font-family: "Montserrat";
   width: 60%;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 2rem auto 0 auto;
   line-height: 1.8rem;
   min-width: 200px;
 }
@@ -593,6 +596,8 @@ line-height: 2rem;
     text-transform: uppercase;
     color:#333;
   }
+
+
 
   h5 {                            /* '&' black) */
     font-family:"Playfair";
@@ -792,10 +797,6 @@ footer {
     line-height: 1.4rem;
   }
 
-  .supporting .col p {
-    line-height: 1.4frem;
-  }
-
 } 
 
 @media only screen and /*(min-width: 361px) and */(max-width: 960px) {
@@ -821,7 +822,15 @@ footer {
 
   .contact {
     font-size: 0.8rem;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
     }
+
+  .container-neutral h5 {
+    font-size: 1.8rem;
+    color: #333;
+  }
 
   #module3::before {
     width: 500px;
@@ -836,6 +845,7 @@ footer {
 
   h3 {
     font-size: 1.4rem;
+    margin-top: 1.4rem;
   }
 
   .plain-text h4 {
@@ -863,10 +873,6 @@ footer {
     width: 250px;
   }
 
-  .supporting .col p {
-    line-height: 1.4rem;
-  }
-
   footer {
     line-height: 0.7rem;
    }  
@@ -876,10 +882,10 @@ footer {
     text-align: center;
   }
 
-.container {
-  flex-direction: column;
-  display: flex;
-}
+  .container {
+    flex-direction: column;
+    display: flex;
+  }
 
   .beyondframes {
     padding-left: 0;
@@ -908,7 +914,6 @@ footer {
     .square {
       background-color:rgba(255, 255, 255, 0.5)
     }
-
     #brand1 {
       padding-bottom: 8%;
     }
